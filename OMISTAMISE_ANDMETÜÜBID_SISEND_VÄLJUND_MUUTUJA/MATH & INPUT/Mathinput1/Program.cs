@@ -21,17 +21,20 @@ namespace Mathinput1
 			int aasta = 0;
 			Console.WriteLine("Mis aasta hetkel on?");
 			aasta = int.Parse(Console.ReadLine());
+			int synniaasta = aasta - vanus;
 			Console.WriteLine("Kas sul juba oli sunnipaev sel aastal? (jah/ei)");
 			string vastus = Console.ReadLine(); 
-			int synniaasta = aasta - vanus;
 			if (vastus == "jah")
 			{
-
 				Console.WriteLine($"Ahhaa, oled sündinud {synniaasta}'l aastal! ");
+			}
+			else if (vastus == "ei")
+			{
+				Console.WriteLine($"Ahhaa, oled sündinud {synniaasta - 1}'l aastal! ");
 			}
 			else
 			{
-				Console.WriteLine($"Ahhaa, oled sündinud {synniaasta - 1}'l aastal! ");
+				Console.WriteLine("Sa ei tea millal su synna on? :'(");
 			}
 		}
 	}
