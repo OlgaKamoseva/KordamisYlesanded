@@ -42,7 +42,7 @@
                 sonum = sonum + sonumiLisa +" ";
                 Console.WriteLine($"Sinu sonum: {sonum} ");
             }
-            while (sonum.Length < 140);
+            while (sonum.Length <= 140);
             Console.WriteLine("see sonum enam twitterisse ei mahuks, kirjuta vahem fam");
 
         }
